@@ -116,7 +116,7 @@
       tabela.innerHTML = '<tr><td colspan="10">Buscando dados...</td></tr>';
 
       try {
-        const res = await fetch('/api/surebets');
+        const res = await fetch('https://surebet-app-m60b.onrender.com/api/surebets');
         const data = await res.json();
 
         const dataAtualizacao = new Date(data.atualizado || Date.now());
@@ -133,7 +133,7 @@
             <tr>
               <td>${sb.jogo}</td>
               <td>${sb.liga}</td>
-              <td>${sb.mercado}</td>
+              <td>${sb.mercado || '-'}</td>
               <td>${sb.casa1}</td>
               <td>${sb.time1} (${sb.odd1})</td>
               <td>${sb.casa2}</td>
