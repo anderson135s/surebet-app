@@ -1,0 +1,43 @@
+{
+  "surebets": [
+    {
+      "jogo": "Flamengo vs Palmeiras",
+      "liga": "soccer_brazil_campeonato",
+      "casa1": "Betano",
+      "time1": "Flamengo",
+      "odd1": 2.10,
+      "casa2": "Bet365",
+      "time2": "Palmeiras",
+      "odd2": 2.25,
+      "inv1": "47.62",
+      "inv2": "52.38",
+      "lucro": "2.38"
+    },
+    {
+      "jogo": "Manchester City vs Arsenal",
+      "liga": "soccer_epl",
+      "casa1": "Bet365",
+      "time1": "Man City",
+      "odd1": 2.00,
+      "casa2": "Betano",
+      "time2": "Arsenal",
+      "odd2": 2.20,
+      "inv1": "48.78",
+      "inv2": "51.22",
+      "lucro": "1.22"
+    },
+    {
+      "jogo": "Barcelona vs Real Madrid",
+      "liga": "soccer_spain_la_liga",
+      "casa1": "Betano",
+      "time1": "Barcelona",
+      "odd1": 2.15,
+      "casa2": "Bet365",
+      "time2": "Real Madrid",
+      "odd2": 2.30,
+      "inv1": "46.51",
+      "inv2": "53.49",
+      "lucro": "3.49"
+    }
+  ]
+}
