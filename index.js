@@ -1,23 +1,15 @@
 const express = require('express');
-const fs = require('fs');
-const cors = require('cors');
-
 const app = express();
-const PORT = process.env.PORT || 3000;
+const path = require('path');
 
-app.use(cors());
-app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/api/surebets', (req, res) => {
-  try {
-    const data = fs.readFileSync('surebets.json', 'utf8');
-    const json = JSON.parse(data);
-    res.json(json);
-  } catch (err) {
-    res.status(500).json({ error: 'Erro ao ler o arquivo surebets.json' });
-  }
+// ROTA PRINCIPAL
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
